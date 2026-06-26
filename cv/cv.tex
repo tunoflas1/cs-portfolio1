@@ -1,0 +1,133 @@
+% =====================================================================
+%  Uygar Tuna Oflas — Curriculum Vitae
+%  Compile with: pdflatex cv.tex
+%  Uses only standard packages so it builds on any TeX distribution.
+% =====================================================================
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.8cm]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+
+% ---- colours --------------------------------------------------------
+\definecolor{ink}{HTML}{15181E}
+\definecolor{accent}{HTML}{2C44D6}
+\definecolor{muted}{HTML}{5C6470}
+\definecolor{line}{HTML}{D4D9E0}
+
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
+
+% ---- section styling ------------------------------------------------
+\titleformat{\section}
+  {\color{accent}\large\bfseries\scshape}
+  {}{0em}{}[\vspace{2pt}\color{line}\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+\setlist[itemize]{leftmargin=1.1em, itemsep=2pt, topsep=2pt}
+\pagestyle{empty}
+\renewcommand{\labelitemi}{\color{accent}\textbullet}
+
+% ---- helper: dated entry --------------------------------------------
+\newcommand{\entry}[4]{%
+  \noindent{\bfseries #1} \hfill {\color{muted}\small #2}\\[-1pt]
+  {\color{accent}\small #3} \hfill {\color{muted}\small #4}\par\vspace{2pt}
+}
+
+\begin{document}
+
+% =====================================================================
+%  Header
+% =====================================================================
+{\Huge\bfseries\color{ink} Uygar Tuna Oflas}\\[4pt]
+{\color{muted}\large Computer Science Student \,\textbullet\, Working-Student Candidate}\\[8pt]
+{\small
+\href{mailto:tunaoflasoflas@gmail.com}{tunaoflasoflas@gmail.com} \,\textbullet\,
+(+90) 546 842 6659 \,\textbullet\,
+\href{https://www.linkedin.com/in/uygartunaoflas}{linkedin.com/in/uygartunaoflas} \,\textbullet\,
+\href{https://github.com/uygartunaoflas}{github.com/uygartunaoflas}
+}
+\vspace{4pt}
+\noindent{\color{line}\rule{\linewidth}{0.6pt}}
+
+% =====================================================================
+%  Profile
+% =====================================================================
+\section{Profile}
+Computer science student with hands-on experience supporting technical events and
+group coding projects. I enjoy turning problems into clean, well-structured code,
+working in international teams, and learning new tools quickly. Comfortable with
+Python, JavaScript and PHP, and currently building a portfolio of small,
+well-documented projects.
+
+% =====================================================================
+%  Education
+% =====================================================================
+\section{Education}
+\entry{Computer Science}{current}{Gisma University of Applied Sciences --- Germany}{}
+\vspace{4pt}
+\entry{University studies \& computer club}{2023 -- 2024}{At\i l\i m University --- Ankara, Türkiye}{}
+
+% =====================================================================
+%  Experience / Volunteering
+% =====================================================================
+\section{Experience}
+\entry{Event Assistant (Volunteer)}{Sep 2023 -- Dec 2024}{At\i l\i m Computer Club, At\i l\i m University}{Ankara, Türkiye}
+\begin{itemize}
+  \item Helped organise seminars and workshops on programming, AI and cybersecurity.
+  \item Provided technical support during events and helped maintain the club's website and social media.
+  \item Took part in group coding projects and student-outreach / digital-literacy efforts.
+\end{itemize}
+
+% =====================================================================
+%  Selected projects
+% =====================================================================
+\section{Selected Projects}
+\begin{itemize}
+  \item \textbf{Knight Path Finder} --- shortest knight route on a chessboard using
+        breadth-first search, with an interactive browser demo and Python unit tests. \emph{(Python, JavaScript)}
+  \item \textbf{Text Insights CLI} --- command-line tool reporting word frequency and
+        readability statistics for a text file. \emph{(Python)}
+  \item \textbf{Guestbook API} --- minimal endpoint with input validation and safe
+        storage of short messages. \emph{(PHP)}
+\end{itemize}
+
+% =====================================================================
+%  Skills
+% =====================================================================
+\section{Skills}
+\noindent
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\color{ink}}l X@{}}
+Programming   & Python, JavaScript, PHP, HTML, CSS \\[3pt]
+Tools         & Git \& GitHub, VS Code, LaTeX, Adobe Photoshop, Google Workspace, Microsoft Office \\[3pt]
+Strengths     & Analytical \& creative thinking, problem solving, planning, prioritisation, clear communication \\[3pt]
+Ways of work  & Adaptable, cooperative, comfortable in international environments \\
+\end{tabularx}
+
+% =====================================================================
+%  Languages
+% =====================================================================
+\section{Languages}
+\noindent
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Turkish} & Native \\[2pt]
+\textbf{English} & B2 (independent user) --- listening, reading, speaking, writing \\[2pt]
+\textbf{German}  & A1 (basic user) \\
+\end{tabularx}
+
+% =====================================================================
+%  Extras
+% =====================================================================
+\section{Interests \& Other}
+\noindent
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\color{ink}}l X@{}}
+Interests       & Chess, TV \& film, literature, music, visual arts, technology, fishing \\[3pt]
+Driving licence & AM, B1, B \\
+\end{tabularx}
+
+\end{document}
