@@ -3,7 +3,7 @@
 A small, static computer-science portfolio built for the **B201 Computer Science Lab**
 assessment at Gisma University of Applied Sciences.
 
-🔗 **Live site:** https://uygartunaoflas.github.io/cs-portfolio/
+🔗 **Live site:** [https://tunoflas1.github.io/cs-portfolio1/](https://tunoflas1.github.io/cs-portfolio1/)
 📄 **CV (PDF):** [`cv/Uygar_Tuna_Oflas_CV.pdf`](cv/Uygar_Tuna_Oflas_CV.pdf)
 
 > Replace `uygartunaoflas` with your actual GitHub username if it differs, in both
